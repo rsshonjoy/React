@@ -12,9 +12,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Product name={products[0].name} price={products[0].price}></Product>
-      <Product name={products[1].name} price={products[1].price}></Product>
-      <Product name={products[2].name} price={products[2].price}></Product>
+      <Product product={products[0]}></Product>
+      <Product product={products[1]}></Product>
+      <Product product={products[2]}></Product>
+      {/* <Product name={products[1].name} price={products[1].price}></Product>
+      <Product name={products[2].name} price={products[2].price}></Product> */}
       <Person name={names[0]} food="Mango"></Person>
       <Person name={names[1]} food="Apple"></Person>
       </header>
@@ -34,8 +36,8 @@ function Product(props) {
   }
   return (
     <div style={productStyle}>
-      <h2>{props.name}</h2>
-      <h1>{props.price}</h1>
+      <h2>{props.product.name}</h2>
+      <h1>{props.product.price}</h1>
       <button>Buy Now</button>
     </div>
   )
