@@ -16,7 +16,7 @@ function App() {
 
 function Person() {
   return (
-    <div style= {{border:'2px solid red', margin:'10px'}}>
+    <div style= {{border:'2px solid red',borderRadius:'5px', padding:'10px', margin:'10px'}}>
       <h1>Name: Shonjoy</h1>
       <h3>Hero of the year</h3>
     </div>
