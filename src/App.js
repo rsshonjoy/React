@@ -15,8 +15,14 @@ function App() {
 }
 
 function Person() {
+  const personStyle = {
+    border:'2px solid red',
+    borderRadius:'5px',
+    padding:'10px',
+    margin:'10px'
+  }
   return (
-    <div style= {{border:'2px solid red',borderRadius:'5px', padding:'10px', margin:'10px'}}>
+    <div style= {personStyle}>
       <h1>Name: Shonjoy</h1>
       <h3>Hero of the year</h3>
     </div>
