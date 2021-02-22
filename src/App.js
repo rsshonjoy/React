@@ -34,10 +34,11 @@ function Product(props) {
     margin:'10px',
     float:'left'
   }
+  const {name, price} = props.product;
   return (
     <div style={productStyle}>
-      <h2>{props.product.name}</h2>
-      <h1>{props.product.price}</h1>
+      <h2>{name}</h2>
+      <h1>{price}</h1>
       <button>Buy Now</button>
     </div>
   )
