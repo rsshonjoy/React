@@ -46,7 +46,10 @@ function App() {
 
 function Counter() {
   const [count, setCount] = useState(10);
-  const handleIncrease = () => console.log('rs');
+  const handleIncrease = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+  };
   
   return(
     <div>
