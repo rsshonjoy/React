@@ -23,6 +23,9 @@ function App() {
         }
         {/* <li>{students[0]}</li>
         <li>{students[1]}</li> */}
+        {
+          products.map(product => <li>{product.name}</li>)
+        }
       </ul>
       <Product product={products[0]}></Product>
       <Product product={products[1]}></Product>
