@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const students = ['RS SHONJOY', 'RAJ']
+  const students = ['RS SHONJOY', 'RAJ', 'Joy']
   const products = [
     {name: "Photoshop", price: "$ 99.99"},
     {name: "Illustator", price: "69.99"},
@@ -18,7 +18,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       <ul>
-        <li>{students[0]}</li>
+        {
+          students.map(student => <li>{student}</li>)
+        }
+        {/* <li>{students[0]}</li>
+        <li>{students[1]}</li> */}
       </ul>
       <Product product={products[0]}></Product>
       <Product product={products[1]}></Product>
