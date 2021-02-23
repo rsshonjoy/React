@@ -6,7 +6,8 @@ function App() {
   const students = ['RS SHONJOY', 'RAJ', 'Joy']
   const products = [
     {name: "Photoshop", price: "$ 99.99"},
-    {name: "Illustator", price: "69.99"},
+    {name: "Illustrator", price: "69.99"},
+    {name: "After Effects", price: "59.99"},
     {name: "Lightroom", price: "59.99"}
   ]
   const productNames = products.map(product => product.name);
@@ -27,9 +28,12 @@ function App() {
           products.map(product => <li>{product.name}</li>)
         }
       </ul>
-      <Product product={products[0]}></Product>
+      {/* <Product product={products[0]}></Product>
       <Product product={products[1]}></Product>
-      <Product product={products[2]}></Product>
+      <Product product={products[2]}></Product> */}
+      {
+        products.map(product => <Product product={product}></Product>)
+      }
       {/* <Product name={products[1].name} price={products[1].price}></Product>
       <Product name={products[2].name} price={products[2].price}></Product> */}
       <Person name={students[0]} food="Mango"></Person>
