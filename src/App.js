@@ -3,12 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const names = ['RS SHONJOY', 'RAJ']
+  const students = ['RS SHONJOY', 'RAJ']
   const products = [
     {name: "Photoshop", price: "$ 99.99"},
     {name: "Illustator", price: "69.99"},
     {name: "Lightroom", price: "59.99"}
   ]
+  const productNames = products.map(product => product.name);
+  console.log(productNames);
+  const studentNames = students.map(student => student);
+  console.log(studentNames);
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -17,8 +22,8 @@ function App() {
       <Product product={products[2]}></Product>
       {/* <Product name={products[1].name} price={products[1].price}></Product>
       <Product name={products[2].name} price={products[2].price}></Product> */}
-      <Person name={names[0]} food="Mango"></Person>
-      <Person name={names[1]} food="Apple"></Person>
+      <Person name={students[0]} food="Mango"></Person>
+      <Person name={students[1]} food="Apple"></Person>
       </header>
     </div>
   );
