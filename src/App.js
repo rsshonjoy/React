@@ -17,6 +17,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <ul>
+        <li>{students[0]}</li>
+      </ul>
       <Product product={products[0]}></Product>
       <Product product={products[1]}></Product>
       <Product product={products[2]}></Product>
