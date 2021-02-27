@@ -52,8 +52,8 @@ function Counter() {
   return(
     <div>
       <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count - 1)}>Decrease</button>
-      <button onClick={handleIncrease}>Increase</button>
+      <button onClick={() => setCount(count - 1)} disabled={count===0}>Decrease</button>
+      <button onClick={handleIncrease} disabled={count===10}>Increase</button>
     </div>
   )
 }
